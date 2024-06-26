@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import ChatContainer from '../components/ChatContainer';
 
-const Chat = dynamic(() => import('../components/Chat'), {
-  ssr: false,
-});
+// const Chat = dynamic(() => import('../components/Chat'), {
+//   ssr: false,
+// });
 
-export default function Home() {
+export default function Home() {  
   return (
     <div className="container">
       <Head>
@@ -14,23 +15,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Next.js Chat Demo</h1>
-        <Chat />
+        <ChatContainer />
       </main>
 
       <footer>
-        Powered by
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-        and
-        <a href="https://ably.com" rel="noopener noreferrer">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/ably-logo.svg" alt="Ably Logo" className="logo ably" />
-        </a>
         <a
-          href="https://github.com/ably-labs/NextJS-chat-app"
+          href="https://github.com/rlieu003/chat-app"
           className="github-corner"
           aria-label="View source on GitHub"
         >

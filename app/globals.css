@@ -58,9 +58,9 @@ main {
   height: 100px;
   margin: 0;
   color: white;
-  background: #005c97;
-  background: -webkit-linear-gradient(to right, #363795, #005c97);
-  background: linear-gradient(to right, #363795, #005c97);
+  background: #368895;
+  background: -webkit-linear-gradient(to right, #368895, #005c97);
+  background: linear-gradient(to right, #368895, #005c97);
 }
 
 footer {
@@ -93,6 +93,16 @@ footer {
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
+}
+
+.assistant {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+}
+
+.assistant-container {
+  display: flex;
 }
 
 @keyframes octocat-wave {
